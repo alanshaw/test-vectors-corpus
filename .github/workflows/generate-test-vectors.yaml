@@ -37,7 +37,7 @@ jobs:
       - name: Generate vars
         id: vars
         run: |
-          SHA_SHORT=$(cd extern/test-vectors && git rev-parse --short=7 ${{ github.sha }})
+          SHA_SHORT=$(cd extern/test-vectors && git rev-parse --short=7 HEAD)
           echo ::set-output name=sha_short::$SHA_SHORT
           echo ::set-output name=branch::chore/update-test-vectors-$SHA_SHORT
           if [ -n "$(git status -s -- corpus/**/*.json)" ]; then
@@ -56,7 +56,7 @@ jobs:
         if: steps.vars.outputs.changes_detected
         env:
           PR_TITLE: "Update test vectors (${{ steps.vars.outputs.sha_short }})"
-          PR_BODY: "This PR updates the test vectors that were changed in the commit ${{ github.sha }}."
+          PR_BODY: "This PR updates the test vectors that were changed in the commit ${{ steps.vars.outputs.sha_short }}."
         run: |
           STATUS_CODE=$(curl -o .output -s -w "%{http_code}\n" \
             --data "{\"title\":\"$PR_TITLE\", \"body\":\"$PR_BODY\", \"head\": \"${{ steps.vars.outputs.branch }}\", \"base\": \"master\"}" \
