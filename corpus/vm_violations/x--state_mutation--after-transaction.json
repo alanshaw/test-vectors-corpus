@@ -1,0 +1,63 @@
+{
+	"class": "message",
+	"selector": {
+		"chaos_actor": "true"
+	},
+	"hints": [
+		"incorrect",
+		"negate"
+	],
+	"_meta": {
+		"id": "after-transaction",
+		"version": "v1",
+		"description": "test an actor cannot ILLEGALLY mutate state acquired for transaction but used after the transaction has ended",
+		"comment": "should abort with SysErrorIllegalActor, not succeed with Ok, see https://github.com/filecoin-project/lotus/issues/3545",
+		"gen": [
+			{
+				"source": "genscript",
+				"version": "0cbbc0872685a3381ead9dbedbcd71ca7ad01c3e"
+			},
+			{
+				"source": "github.com/filecoin-project/lotus",
+				"version": "v0.5.8-0.20200903221953-ada5e6ae68cf"
+			},
+			{
+				"source": "github.com/filecoin-project/specs-actors",
+				"version": "v0.9.3"
+			}
+		]
+	},
+	"car": "H4sIAAAAAAAA/0pflFqUn19S3HRDK0KdgbFwwRMmhf/RBduXNm8512YhZuuWfVUrUHlToN+PD/XyN804ra8nuCMpPZCuLLP0tPoatT/zlu3gXuDacvBN5r8Q82n8K6+YLlbepJ5ellpUnJmfx7iNjTizm1xafPgZOhcmGjY2OTGwtdzQipBmYAxlEEvLzNE31C9LLcpMy0xNKUpNzywuKapEcgrHzaQtxRJCRV+mHdESdfsreGr1M8v9e/fZnjo/wXrr6rYDDA5QQ1labmiFg8wUgphZXJJflJieWpBfnlqEZB63VtuU2rO78g8tXKfwan1fysEt8g+nCh5Pufz+vO2qM992w81LarmhFQAyjxtiXnJGYn4xkkHTe9K/3FiqxSg1Jbvuk8HZojgb51zpPec7Z7r/CFar7ZoDNqipyYmBueWGlj/IIC6oQUX5eUjmzD0R++8V66JCy+VePoIrmlOXN2nKlpXvemNUIb9d+OYxbgaHJieG5JYbWkEgM3ghZiQmJ+eX5pUgGXPfteTY5oU7s07s2TBly/SayZq9FTkX3v/adOn5kuvS5TO44P5iaLmhFQgyigcaTpXFJam5SCa5bjh/SOHcm+gamaQjVyRtLZ68XtLXIVo053n8HK4NTw4iQpwVFI0SIKOEUYI8N7EoOxXZbRwct6su7J6xYpY9118WL499ni3104zcbUPUfomoOtzq0IabyIgWVJl5mcjmLGWzm/17xr7K5a4vN0sc2yryTvSk9LG9wlfbb+g1Pz9WkQM3J4VgcJ1RPVayIi/0iW2q9ysmhq21sv7m0SJCRo7L+GLLl656y8zgxvDiylIBBqiBTGiBVpRanliUgmSehFqY3KeQZXyCn05+4n0keo3hFZvYzZKokmc/HwkXhJ9NZvBlYCuLqbRfyFB5gYGBwQB32scu2sBIXHZodmIIQHbWv6wziYsXZ/OY23hZ9S3zbtT+dGp2UEPAhDkVVzhCu3hIUKpJnLImhwYN7JkQU2QvI3F5coIDFDRFSDAw3clhwALCGZgPYBNnYCDBjwwKJCj+JoVWOCAxNYkrI5oSGiRQCwYES5e44qERXPaxymEkdhSOFnGFRKMTQ7IMetGAzFYnroho0MJRKGARWsdEXCHRjRQ1T1O7bSXOsj28PUF0y4Y3oQeVF/lGP3ylcsPS4ugOy2p/ffKUUjGzkJLmSFHr4OCgR5y/mhkYmh0ZGpDTF6g0RbBSiStTm5Gc53Xt+fd6xbR9PAXN1Sv+7dnw6OqsVcxmcz8dvn/71fXuB+slUguSMxIz83TLEnMyUxJLMvPzPIjT2eTUwNAILmtDGTNfGHv6TJTN+qf/0FYxzifmO3tSqESKLXHldiN2/TLoRTcyu564IrzTwYHBk0EAWqp4MTB+915uVchyZXJThBSIs3hW5b0NruilTxij5LSs7browp4M/P8hgMFhDxtxra5h2Ih6MWnHkk+fb321Ppftsya6yV2dx/Qw91+nJFZ3m/R5/Af0Blsjyo1B3KPsBcNoU4qEphSjG8PFgMlxNGhKVXHPOsUQTVxKaqowLMuNL8vMzwGXS8X6xSWJJanxuaUlYL5+YlpJapFuSVFiXnFiMkhENzOvAQAAAP//AQAA//8Kd0v3Rw0AAA==",
+	"preconditions": {
+		"epoch": 0,
+		"state_tree": {
+			"root_cid": {
+				"/": "bafy2bzaced7vw4fxuwb3jtughald2rtl2uvfci5skfhpr4d7d7mtmcj325qeo"
+			}
+		}
+	},
+	"apply_messages": [
+		{
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABB1gygngudm1fdmlvbGF0aW9ucy9zdGF0ZV9tdXRhdGlvbi9hZnRlci10cmFuc2FjdGlvbgI=",
+			"epoch": 0
+		}
+	],
+	"postconditions": {
+		"state_tree": {
+			"root_cid": {
+				"/": "bafy2bzacedagoiy4uxfsplbg7spknoalubcyjqpmnh7fin4wb6u5inndeozco"
+			}
+		},
+		"receipts": [
+			{
+				"exit_code": 0,
+				"return": "",
+				"gas_used": 385031
+			}
+		]
+	},
+	"diagnostics": {
+		"format": "Lotus-ExecutionTrace-V1",
+		"data": "SDRzSUFBQUFBQUFBLzd5VFgyL1RNQlRGdjh0NTlvUFRyR3RxaVFmVU5WRWxPcW9DQlczYWcrdVlOTWl4Si8rcENsVy9PM0tjU2tEM3NBRmFYdTdOMWRYdm5IdVUzQit4ZEEzWUVSdHBYV3MwR0NYNGFNRGc2YlFBUVdsTjE3OWxsSUxnMW1naCs2VU5WMEdDSVU0cjd0NjFYZXZCTW5wKytta3A1WXcvZ21GRWg3MlZsVjBiSWpJRHdWTDZuYW5CSmdRcmJubm53TkRvSnRSZDlyWHUxSDVibFpSL25nYnhmZnFqcmtwNnQ1bjYrc3Q2VjFkcXYyMm51enU5VnFMTnFPaktJRWJsdDM3ZUxON2dST0poYStIamJmTkQ2MmVtVHI3WDBnZXJ3WFJRcW5mMHlja2FMQy9HTk05T0JITnJqUVVEQ0c2QzVmNGNTc1hkYk1kdEl4M1kvUkczdkl2WHY5ZXpIVy8xVWpySEd3a0NaY1NaN1J1dzdLb29ybk1DMFVTSnZvMTVaeGtsMk1lRldNVlFYYXJlZzlFVCtVV2prdjZ0OE1aZThtbEMwNFI5RVRSbHY5QjdJOUtWRi9CUlhveXZrOERRUGtlRVFCN0EwT0kzdGQ3Ly9DREZmNzFoOGFqcVN2cEw1bVE4dWhvbDd0RCtMWHV1NjMrMW5CTEpYeW1QVlhnaWp5eWYwTWtBTHE3Nk5rTEcrYk9zajEvRCs1L2Y0NDNSVC94UUx4UjRJUGdRdG9JcjVSTGw5UEF6QUFELy8vUWdVZjcwQkFBQQ=="
+	}
+}
