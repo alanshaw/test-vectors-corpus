@@ -1,0 +1,60 @@
+{
+	"class": "message",
+	"hints": [
+		"incorrect",
+		"negate"
+	],
+	"_meta": {
+		"id": "fails-unparsable-constructor-params-via-init-actor",
+		"version": "v1",
+		"description": "verifies that actor creation fails and gas is deducted when passing unparsable constructor params via init actor",
+		"comment": "this should not return SysErrSenderInvalid; it should return something else, likely an ErrSerialization because the error is in actor space",
+		"gen": [
+			{
+				"source": "genscript",
+				"version": "0cbbc0872685a3381ead9dbedbcd71ca7ad01c3e"
+			},
+			{
+				"source": "github.com/filecoin-project/lotus",
+				"version": "v0.5.8-0.20200903221953-ada5e6ae68cf"
+			},
+			{
+				"source": "github.com/filecoin-project/specs-actors",
+				"version": "v0.9.3"
+			}
+		]
+	},
+	"car": "H4sIAAAAAAAA/0pflFqUn19S3HRDK0KdgbFwwRMmBRajYsbOg4EmCnUxG+se3OFgNq16/dHkkWVSgU6X58FGGSSldo8ed+3vn7+A7w9nx5v+fdyPPjzqEZDiedE6Kaj36O1ohvSy1KLizPw8xn1sxJnd5NLiw63QuTDRsLHJiSG15YZWEANjKANvWmaOvqF+YnJyfmleCZIDfpmH3bV+Hrtuwaziz4c8D32YZH686NjTuTOzlq1Yt0b2sBGDG8OLK0sFGKAGsrXc0IqQBpkoBjGxLLUoMy0zNaUoNT2zuKSoEslojptJW4olhIq+TDuiJer2V/DU6meW+/fusz11foL11tVtBxgcoIaytNzQCgeZKQQxs7gkvygxPbUgvzy1CMk8bq22KbVnd+UfWrhO4dX6vpSDW+QfThU8nnL5/XnbVWe+7Qab19TkxMDcckPLH2QeF8S85KL8PCRz5p6I/feKdVGh5XIvH8EVzanLmzRly8p3vTGqkN8ufPMYN4NDkxNDMsGQu+9acmzzwp1ZJ/ZsmLJles1kzd6KnAvvf2269HzJdenyGVxw7zG03NAKBBnFA/VeZXFJai6SSa4bzh9SOPcmukYm6cgVSVuLJ6+X9HWIFs15Hj+Ha8OTg4iAYgWFvgTIKGGUkMpNLMpORXYbB8ftqgu7Z6yYZc/1l8XLY59nS/00I3fbELVfIqoOtzq04SYyogVVZl4msjmz9u2ativjw6nQWb7LdR7oikpV+fb9fnHfq+DWlGfu2/9yw81JIRhcZ1SPlazIC31im+r9iolha62sv3m0iJCR4zK+2PKlq94yoyU0JrRAK0otTyxKQTJPQi1M7lPIMj7BTyc/8T4Svcbwik3sZklUybOfj4QLws8mM/gysJXFVNovZKi8wMDAIIfhNhSOLXG5oTGU8f7fUL+bS/RO7/qm8zD/H//v70GTvhrgzg/YRRsYicsizU4MAch+/pd1JnHx4mwecxsvq75l3o3an07NDmoImDCn4gpHaBcPCUo1iVPW5NCggT1jYorsZSQun05wgIKmCAkGpjs5DFhAOAPzAWziDAwk+JFBgQTF3yRQCwwES5e4YqMRXJSxahFXOjQ6MSTLoJcJyGx14sqGBi0cpQEWoXVMxJUO3UjB9jS121biLNvD2xNEt2x4E3pQeZFv9MNXKjcsLY7usKz21ydPKRUTMinpgRS1Dg4OesT5q5mBodmRoaFBArUYRbBSiStMm5Gc905irZ/sy2XxNzOtXGqmvdOYWLswfHnUvezMzpOy8/ryIyXSCpIzEjPzdMsSczJTEksy8/PSiNPZ5KzQwNAELmVDGTNfGHv6TJTN+qf/0FYxzifmO3tSqEQKVBJbSSeRaktccd6I3XAZ9BIdmV1PXMne6eDA4MkgAC0PvBgYv3svtypkuTK5KUIKxFk8q/LeBlf0ciOMUXJa1nZddGFPBv7/EMDgcISNuEbZaBtr0LSx3BjEPcpeMIy2tEhoaTG6MVwMmBxHg5ZWFfesUwwAAAAA//8BAAD///cGET0SDQAA",
+	"preconditions": {
+		"epoch": 0,
+		"state_tree": {
+			"root_cid": {
+				"/": "bafy2bzaceacde4ybrhavcnbapzolc7xa3qeagnl25pytjyrzmjyczcsjygary"
+			}
+		}
+	},
+	"apply_messages": [
+		{
+			"bytes": "igBCAAFCAGQAQwAnEBo7msoAQgDIQgABAlgxgtgqWBkAAVUAFGZpbC8xL3BheW1lbnRjaGFubmVsUgAAAAAAAAAAAAAAgkIAZEIAZQ==",
+			"epoch": 0
+		}
+	],
+	"postconditions": {
+		"state_tree": {
+			"root_cid": {
+				"/": "bafy2bzacea7ofy4kx6hz7iao7qeyr3epxyf6f4hcrqibudhiqwjffdof3nnqa"
+			}
+		},
+		"receipts": [
+			{
+				"exit_code": 1,
+				"return": "",
+				"gas_used": 1912653
+			}
+		]
+	},
+	"diagnostics": {
+		"format": "Lotus-ExecutionTrace-V1",
+		"data": "SDRzSUFBQUFBQUFBLyt5VlgwL2JNQlRGdjBwMG56YkpEM2FTL3NFU0QybG9xMHJBb0J0RkF2SGdKcGMwSTdVejIwRkZxTjk5Y2xLa2R1Mm1NbGozUWw3aU9OYnZuSHR0K2R3K3c1bkpnRC9EQkxYSmxRUk9DWHhUd01GU0JnUUdXczJiRDBxQndMbVNDZFpySnFLb0VEZ3dTdXMvUTJGTzgzbHVnZGN6OVZQUERoQmpVUUlILzJYZGhjWjVYam1zVXpoRE8xTXBjSi9BaGRCaWJvQkRack1mMTcySEtKcGNSWVBoVFRtTnU0dlRvRGZEYTFaTTVmaTdHQTZxNlh4aXJySm80OGtlUnRGTmZ4VGRYQjRmdzVLNDJzYUpkZVgxRjdtTlZZckFHWUV4MmtwTDRMSXFpdHJSbGNFVU9EdGlmcnNWTEFuMHRWWWFPQ1JLR3F1cnhDcnQzWXU4d05UN05NWWFkTXcrQTRHVFNndjcwcmFoTVBGTTZBd044TnRuT0JkejE2QXZNcDZKWEo2aE1TSkRJRkNvNUVYYVpzQlppM2JiQVlFa0F4NTA2NkhiRWNaOEFvOXVBU1h3bUt6ZXBubGJDNXd1eVpyR0VHM2tiRzd6YVlPbURaYStCdHBzelVnK3FxU3BjZ3ZlWWtHcjNRaXNodnVJRU1DRk8xUTViTWpWQmZRWG1MeHJFYU95U0lkb3Q1bWRsaC82RFhjMS9GdDJYNlp2dGR5MHBCMThOR1N6SWVHQkduSlI3V2dJNjNSb1p3WHVodlhRUVk2Q3Zid2ZIV296ZDNzUGQzcHY3K2Y5SUFjeDFpZ3MvdWJhWXF3YmhxMndvVE5HdS9XSFkzWGFyeEg1TjlaL3ZSbFBsTnh4dGI5UzRJN0ExMnFhaUtKb0F1UVB5VXo5ald4K1l6SnY1VEpkeTJXMmxzdWJhUnZIbDFudjRUTHJGZStSdGF0OHRjcExNVkVwZXFWVFJZdmFySWN1OTVLcDBsNHV5OHA2WnFhcUl2V202S2w3eno2VjZBbXR4ZE8rd2Z3Um12L3ZmRHZLOG01NTl6TUFBUC8velgrdTNvSUs="
+	}
+}
