@@ -15,7 +15,18 @@ jobs:
           repository: filecoin-project/test-vectors
           path: extern/test-vectors
           submodules: true
+      - name: Generate vars
+        id: vars
+        run: |
+          SHA_SHORT=$(cd extern/test-vectors && git rev-parse --short=7 HEAD)
+          BRANCH="chore/update-test-vectors-$SHA_SHORT"
+          echo ::set-output name=sha_short::$SHA_SHORT
+          echo ::set-output name=branch::$BRANCH
+          if [ -n "$(git ls-remote --heads git@github.com:alanshaw/test-vectors-corpus.git $BRANCH)" ]; then
+            echo ::set-output name=pr_exists::true
+          fi
       - name: Cache dependencies
+        if: !steps.vars.outputs.pr_exists
         uses: actions/cache@v2
         with:
           path: ~/go/pkg/mod
@@ -23,28 +34,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-
       - name: Install dependencies
+        if: !steps.vars.outputs.pr_exists
         run: |
           sudo apt-get update
           sudo apt-get install ocl-icd-opencl-dev
       - name: Build filecoin-ffi
+        if: !steps.vars.outputs.pr_exists
         run: cd extern/test-vectors/gen/extern/filecoin-ffi && make
       - name: Update test vectors
+        if: !steps.vars.outputs.pr_exists
+        id: update
         run: |
           rm -rf corpus
           cd extern/test-vectors
           make upgen
           mv corpus ../../
-      - name: Generate vars
-        id: vars
-        run: |
-          SHA_SHORT=$(cd extern/test-vectors && git rev-parse --short=7 HEAD)
-          echo ::set-output name=sha_short::$SHA_SHORT
-          echo ::set-output name=branch::chore/update-test-vectors-$SHA_SHORT
           if [ -n "$(git status -s -- corpus/**/*.json)" ]; then
             echo ::set-output name=changes_detected::true
           fi
       - name: Commit and push
-        if: steps.vars.outputs.changes_detected
+        if: !steps.vars.outputs.pr_exists && steps.update.outputs.changes_detected
         env:
           COMMIT_MESSAGE: "Update test vectors"
         run: |
@@ -53,7 +62,7 @@ jobs:
           git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "$COMMIT_MESSAGE" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
           git push origin ${{ steps.vars.outputs.branch }}
       - name: Open PR
-        if: steps.vars.outputs.changes_detected
+        if: !steps.vars.outputs.pr_exists && steps.update.outputs.changes_detected
         env:
           PR_TITLE: "Update test vectors (${{ steps.vars.outputs.sha_short }})"
           PR_BODY: "This PR updates the test vectors that were changed in the commit https://github.com/filecoin-project/test-vectors/commit/${{ steps.vars.outputs.sha_short }}."
