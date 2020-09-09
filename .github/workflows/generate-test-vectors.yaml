@@ -10,6 +10,7 @@ jobs:
       - name: Checkout test-vectors-corpus
         uses: actions/checkout@v2
         with:
+          repository: alanshaw/test-vectors-corpus
           path: test-vectors-corpus
       - name: Checkout test-vectors
         uses: actions/checkout@v2
