@@ -53,7 +53,7 @@ jobs:
             echo ::set-output name=changes_detected::true
           fi
       - name: Commit and push
-        if: !steps.vars.outputs.pr_exists && steps.update.outputs.changes_detected
+        if: "!steps.vars.outputs.pr_exists && steps.update.outputs.changes_detected"
         env:
           COMMIT_MESSAGE: "Update test vectors"
         run: |
@@ -62,7 +62,7 @@ jobs:
           git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "$COMMIT_MESSAGE" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
           git push origin ${{ steps.vars.outputs.branch }}
       - name: Open PR
-        if: !steps.vars.outputs.pr_exists && steps.update.outputs.changes_detected
+        if: "!steps.vars.outputs.pr_exists && steps.update.outputs.changes_detected"
         env:
           PR_TITLE: "Update test vectors (${{ steps.vars.outputs.sha_short }})"
           PR_BODY: "This PR updates the test vectors that were changed in the commit https://github.com/filecoin-project/test-vectors/commit/${{ steps.vars.outputs.sha_short }}."
