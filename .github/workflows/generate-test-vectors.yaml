@@ -22,7 +22,7 @@ jobs:
           BRANCH="chore/update-test-vectors-$SHA_SHORT"
           echo ::set-output name=sha_short::$SHA_SHORT
           echo ::set-output name=branch::$BRANCH
-          if [ -n "$(git ls-remote --heads git@github.com:alanshaw/test-vectors-corpus.git $BRANCH)" ]; then
+          if [ -n "$(git ls-remote --heads https://github.com/alanshaw/test-vectors-corpus.git $BRANCH)" ]; then
             echo ::set-output name=pr_exists::true
           fi
       - name: Cache dependencies
