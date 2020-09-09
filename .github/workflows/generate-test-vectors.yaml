@@ -1,7 +1,7 @@
 name: Generate Test Vectors
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/60 * * * *"
 jobs:
   update-vectors:
     name: Update test vectors
