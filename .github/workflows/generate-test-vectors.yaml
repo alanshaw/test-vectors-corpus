@@ -1,7 +1,7 @@
 name: Generate Test Vectors
 on:
   schedule:
-    - cron: "*/60 * * * *"
+    - cron: "*/5 * * * *"
 jobs:
   update-vectors:
     name: Update test vectors
@@ -9,16 +9,18 @@ jobs:
     steps:
       - name: Checkout test-vectors-corpus
         uses: actions/checkout@v2
+        with:
+          path: test-vectors-corpus
       - name: Checkout test-vectors
         uses: actions/checkout@v2
         with:
           repository: filecoin-project/test-vectors
-          path: extern/test-vectors
+          path: test-vectors
           submodules: true
       - name: Generate vars
         id: vars
         run: |
-          SHA_SHORT=$(cd extern/test-vectors && git rev-parse --short=7 HEAD)
+          SHA_SHORT=$(cd test-vectors && git rev-parse --short=7 HEAD)
           BRANCH="chore/update-test-vectors-$SHA_SHORT"
           echo ::set-output name=sha_short::$SHA_SHORT
           echo ::set-output name=branch::$BRANCH
@@ -40,15 +42,16 @@ jobs:
           sudo apt-get install ocl-icd-opencl-dev
       - name: Build filecoin-ffi
         if: "!steps.vars.outputs.pr_exists"
-        run: cd extern/test-vectors/gen/extern/filecoin-ffi && make
+        run: cd test-vectors/gen/extern/filecoin-ffi && make
       - name: Update test vectors
         if: "!steps.vars.outputs.pr_exists"
         id: update
         run: |
-          rm -rf corpus
-          cd extern/test-vectors
+          rm -rf test-vectors-corpus/corpus
+          cd test-vectors
           make upgen
-          mv corpus ../../
+          mv corpus ../test-vectors-corpus/
+          cd ../test-vectors-corpus
           if [ -n "$(git status -s -- corpus/**/*.json)" ]; then
             echo ::set-output name=changes_detected::true
           fi
@@ -57,6 +60,7 @@ jobs:
         env:
           COMMIT_MESSAGE: "Update test vectors"
         run: |
+          cd test-vectors-corpus
           git checkout -b ${{ steps.vars.outputs.branch }}
           git add corpus/**/*.json
           git -c user.name="GitHub Actions" -c user.email="actions@github.com" commit -m "$COMMIT_MESSAGE" --author="${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>"
