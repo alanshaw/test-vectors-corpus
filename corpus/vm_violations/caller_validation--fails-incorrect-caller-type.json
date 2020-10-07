@@ -3,14 +3,10 @@
 	"selector": {
 		"chaos_actor": "true"
 	},
-	"hints": [
-		"incorrect",
-		"negate"
-	],
 	"_meta": {
-		"id": "system-exit-code-9",
+		"id": "fails-incorrect-caller-type",
 		"version": "v1",
-		"description": "actors should not abort with SysErrorIllegalActor(9)",
+		"description": "verifies that an actor that validates against a actor type set that does not include the caller type",
 		"gen": [
 			{
 				"source": "genscript",
@@ -37,7 +33,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgigwl4HVN5c0Vycm9ySWxsZWdhbEFjdG9yKDkpIGFib3J09A==",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABAlgYgwOAgdgqUQABVQAMZmlsLzEvc3lzdGVt",
 			"epoch": 0
 		}
 	],
@@ -49,14 +45,14 @@
 		},
 		"receipts": [
 			{
-				"exit_code": 9,
+				"exit_code": 8,
 				"return": "",
-				"gas_used": 156719
+				"gas_used": 146719
 			}
 		]
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlQyL2FRQkRGdjByMFRvbTBoelVPMUY2SlE4UWZsN2JRQ0ZvaU5jcGhXVStOMjdVMzJsMVRFT0s3VjE2RDFDbzlOSWY0TXVQWjBlL05tM2s4WXU0S2lDUFdaRjFwYWdqTzhNVkE0RHRQRXpCTXJhbkNYOFE1R0JhbVZoU2ExbEkzQklHMm1rbjNxYXhLRHhIeHl4ZXFVNktSZklaQWo1Lzc3aTFWWmRNaUl6RE15VzlORHBFdzNFc3JLd2VCNHBlK2ZiOWU5QlZmSDFTVkhsWVBlL2Z0SWQ5dUp0TWZlWlllUG81L1BzK3lhYm1KUC9EMGJqakVpYlVtbHNxM1BpYjcwbzlNVGhBcHc1SjhZMnVJdXRFNnFIOTFsRU5FL2NHN0tEMHhUS3cxRmdLcmd3dnBUR3NxcEw1VDN0anI5T1pLYm96MVY5ZExDc2hoZWdPR2NXT2x2MndxazI2MGxiWWdCL0Y0eEVKVzdVbysxNk90TE9zNU9TY0xBb00yNmpLRUx5Q2l1SmNNWWdaVlFNUkpTTnNqcExjTXUvYWRNK3pVT2JvdWVnL0JUK3dQaVl4OG1QTWxubmRrM2xINWE2RGRQV2IxenFqTzVBdDRMMDc2ZzA3Z25QNlBDQVB0SVZEaUw3VXcvMlJQNmswOWpFMzlqeHU4VXVDSllkVnNsTlRhZFpUVDArOEFBQUQvL3dWVnlhdzhBd0FB"
+		"data": "SDRzSUFBQUFBQUFBLzdSU3pXN2JQQkI4RldGTzN3ZndRRW1KcXhEb3dYVWNvMENjdnpZKzFQR0JvVmEwV29sMFNNcDJiZmpkQzBsMjBTSTlOSWZ5c3N2bFlHWjJsL005cGw1RDdERWo1MHRySURqRFp3dUJnbDlrWUxoeXR1NXVNZWRndUxGR1VRZWF5YW9oQ0xUVmlmVFhaVjBHaUppZlRsZTlJaHJKRlFRU2ZzVGRPYXJMcHFXTXdUQ2xzTFE1Uk1Kd0o1MnNQUVQwNW5hb2MvM3llRC84TUxzZlRyL1VsYi9lamRjcXJYYjVaQlp3WUszcEJ4VmEzK050R1VZMko0aU00WUZDNHd5RWFhcXFVM3YwbEVQRVo0TjM4Y1dCWWV5Y2RSQlFzcXJJUmFyTW8vQjlSZEVUbm1YeDdVWG1sVGJGUmczcXI2dTZjQnVkcG11elMrUVRvbzMwa2JFaHNvWWlXMFR6SXo3L2liZm1iS3ZQODhJMGkraS9CK284dmMvK0I4Tmw0MlE0alhZaS9XZ3BuU1lQTWQvalJ0YnRERy9OYUNsTE15WHZwU1l3VkZhZHVnZ2FJazZTYkpBeUtBMlJabDNhYmkwN1kxaTM3NXhoclk3Ujl6RUVDSDVndjBoTUtBeFZzTzQxUGUrWmVjL0szMExhTC9DaldWdlZOL21LUEVtejgwRXZjRXovUm9TQnRoQW84WnRhNTMrOEpmVlBlN2kwNWc4N2VLUEFndUZUODl4K05OK3pIQlkvQWdBQS8vOW92Y0NYYlFNQQ=="
 	}
 }
