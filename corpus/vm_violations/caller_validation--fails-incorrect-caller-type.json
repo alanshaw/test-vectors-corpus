@@ -3,26 +3,22 @@
 	"selector": {
 		"chaos_actor": "true"
 	},
-	"hints": [
-		"incorrect",
-		"negate"
-	],
 	"_meta": {
-		"id": "negative-exit-code",
+		"id": "fails-incorrect-caller-type",
 		"version": "v1",
-		"description": "actors should not abort with negative exit codes",
+		"description": "verifies that an actor that validates against a actor type set that does not include the caller type",
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "326cab3eb3dd8d1b77a17d85e0c10ae36c369f2d"
+				"version": "9db1dd8c9f85bd80eb624e77130a02a3aaf3a1f9"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.7.0"
+				"version": "v0.7.2-0.20200921091031-d9951cdff402"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.8"
+				"version": "v0.9.10"
 			}
 		]
 	},
@@ -37,7 +33,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgdgyB4GG5lZ2F0aXZlIGV4aXQgY29kZSBhYm9ydPQ=",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABAlgYgwOAgdgqUQABVQAMZmlsLzEvc3lzdGVt",
 			"epoch": 0
 		}
 	],
@@ -49,14 +45,14 @@
 		},
 		"receipts": [
 			{
-				"exit_code": -1,
+				"exit_code": 8,
 				"return": "",
-				"gas_used": 151719
+				"gas_used": 146719
 			}
 		]
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUjBXdmJNQkRHLzVYd1BXMmdndVEwclMzb3c1b21wckIwYWJxRk5xVVBxbnc0WXJZMEpEbWtoUHp2dzNZQ0c5M0Q4bEMvM1BsMC9MN3Y3cDUzbUlVU2NvY2wrV0NjaGVRTTN4MGtJczlTTUV5OXE3cy93VGtZN3B6VjFEVXRWZFVRSk5wcXJzSlhVNXNJS2ZqeDY2cFRvckg2QlltRUgvcm1ubXJUdEVnQmhobkZ0U3NnVTRhNThxb09rQ2pmcnMvemZGU3RraWxYajZ2cU5sK2VxOGY3OGluSmZxNGVydGRQZGZaV3pPK3ZzR2V0K1lXT3JmL0oxc1N4S3dqeVREQXNLRGJlUXRxbXFqclpINEVLU0RFU2x5TGJNMHk4ZHg0U2xrb1Z6WVlHdERWeG9GMUJBL1hxZkJ4OFdsQ0h1em9UbjhGdzAzZ1ZqK3ZKVlJpdmxTOHBRRDd2Y0tmcWRnL2Y3SGl0akoxUkNLb2tNRlJPSHczRUVsSWtsK25Ga0VHWGtNTzBTOXZOcHhuRHBuM25EQnQ5aUtHUE1VTHlQZnRESXFmNFJVZm4zK041VCtZOWxaOEM3WTl3YXpkTzkwTytneWZEZEhUUkN4elMveEZob0Mwa0RQNVM2L3hQdHFRL2RJWWJaLzl4Z3hNRlhoZ2VtbGV0cWlyMGxQM0w3d0FBQVAvL3dWTit4VEVE"
+		"data": "SDRzSUFBQUFBQUFBLzdSU1Q0L2FQaEQ5S3RFNy9YNlNEMDdDMHF5bEhpakxva3JML3FGZERtVTVlSjNCcEUxczFuYUFndmp1VlJLb1dtMFAzVU45bWZINDZiMDNNNTRmTVBFYTRvQVpPVjlZQThFWlBsc0lCSDZaZ2VIYTJhcTl4WnlENGRZYVJTMW9Kc3VhSU5CVXg5TGZGRlVSSUdKK1BtMzFtbWdvMXhCSStBbDM3NmdxNm9ZeUJzT0V3c3JtRUFuRHZYU3k4aERRMjd1Qnp2WEw0OFBndyt4aE1QbFNsZjVtUDlxb3ROem40MW5Ba1RXbXB5bzB2a2U3SWd4dFRoQVp3NVJDN1F5RXFjdXlWWHYwbEVQRXZmNjcrUExJTUhMT09nZ29XWmJrSWxYa1VmaStwdWdKejNMNTdVWG1wVGJMcmVwWFg5ZlYwbTExbW03TVBwRlBpTGJTUjhhR3lCcUs3REthbi9ENVQ3dzF2WjIreUplbVhrVC9UYW4xOUQ3N0h3eFh0WlBoUE5xeDlNT1ZkSm84eFB5QVcxazFNN3d6dzVVc3pJUzhsNXJBVUZwMTdpSm9pRGhKc243S29EUkVtclZwczdXc3g3QnAzam5EUnAyaTcySUlFUHpJZnBFWVV4aW9ZTjFyZXQ0eDg0NlZ2NFcwVytCSHM3R3FhL0lWZVpKbUYvMU80SlQralFnRDdTQlE0RGUxMXY5b1IrcWY5bkJselI5MjhFYUJCY09uK3JuNWFMNWpPUzUrQkFBQS8vOHYxY0tLYlFNQQ=="
 	}
 }
