@@ -14,15 +14,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "56e0fd078a4efb47e54d9f8b2019360286d20c09"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.6.2-0.20200909104030-159be5b543fd"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.7"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -37,7 +37,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFaDAPVybm8gZXhpdCBjb2RlIGFib3J0",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFaDAHJubyBleGl0IGNvZGUgYWJvcnT1",
 			"epoch": 0
 		}
 	],
@@ -57,6 +57,6 @@
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlFXL2JQZ3pGdjRyeFR2OC9vSU9VdEoxTklJY3VTWU1DUzllbFc3Q3U2RUdWT1VlWUxSV1NuR1VJOHQwSDJ3bXdvVHVzaC9sQ21pSis3NUY4MkdNWks5QWVhdzdSZWdlU0FoODlDRWtXT1FTdWdtLzZQeVVsQkc2OE05dzNyWFhkTWdoZGRhSGpPOXZZQkZMeTlQWFZLK2FwZmdaaEpJOTl0NEViMjNaSUJZRWxwNDB2UWJuQXJRNjZpU0JVMzJmS05PZmI2OFg2VEgvK1VOMlBpbTlmN3Q1dTdwdmlSM2s1bWVBZ090TXJrenJmODUxTlUxOHlTQW1zT0xYQmdWeGIxNzNhcDhnbFNKMk4zNmppSURBUHdRY1E0ak9iVEp2a1E4eSthbHUzZ1NselB1T2RUWm54SldmNnlZZVUvYmZpSGo1Ui8wTmcxZ2FkVGp0YTZEamQ2RkJ4QkQzc2NhT2JiaG52M1hTanJWdHlqTHBpQ05UZW5PeWtDcVJVa1YrTUJVd0ZHdWQ5MnEwL1Z3TGI3bDBLYk0weHhpR21CSklIOFl2RWd0Tmw1LzBsWGc1a09WRGxhNkRESmE3ZDFwdGh5QmZ3MFRnL3Z4Z0VqdW5maUFqd0RnU0wzOVI2Ly9NZG0zODZ3OHk3UDl6Z2xRS1BBbmZ0azlGMUhRZks0ZkZuQUFBQS8vK0taejRVTmdNQQ=="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVVXdjZNQlRGdjBvNVQvOC81Q0hSd1RUZ2k1M0t4aHl1MjJSczdDRnRyelVqYmVRbVlRN3h1NDhXdlcvbmNEam54LzA4WVIwYTZCTzJ4TUg2RGxvS3ZIcG83T1IwQW9FbCszWlFTa29JUFBtdW9pRzBOUzRSTkhwM1pjS2piVzJFVnZKNmc3c2t5czBCR2lONXlXMllXcHY2U2dXQk5jVzlyNkVuQWh2RHBnM1FhSDdtdjJVN2FUN2U5NGM2bjMrWG84TGRyNWEySEQvSTZmTnNoclBvb1lzcTl0eUxvNDI1cndsYUNSUVVFM2ZRWFhKdVdIc0xWRU9ybS9HdG1wNEZGc3llb1JFT1ZHV21pcDVEdGpQV0pTYWRkVDZqbzQxWjVXdktUT2s1WnY4S0dzcG42ajhFN2hLYmVQM1J5b1I4YjdpaGNKMTdTV1Zsbkx2bzg5ZGZBQUFBLy85RmlhTWpYQUVB"
 	}
 }

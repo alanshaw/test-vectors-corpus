@@ -10,15 +10,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "0cbbc0872685a3381ead9dbedbcd71ca7ad01c3e"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.5.8-0.20200903221953-ada5e6ae68cf"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.3"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -33,7 +33,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABAkEA",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABAkSDAICA",
 			"epoch": 0
 		}
 	],
@@ -47,12 +47,12 @@
 			{
 				"exit_code": 9,
 				"return": "",
-				"gas_used": 122719
+				"gas_used": 125719
 			}
 		]
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlQ0dmJNQkRGdjRwNXB4WjBrQjJheGdNNUJHODJGSnJ0a3YxeldmYWdsUWRISUV0RmtrTWc1THNYV3dtMGJBL2RRM1daMFdqNHZUZWpseE8yc1FPZDhNd2hHdTlBVXVEUmc1Qmt2WURBYmZEOWRDdWxoTUNkZDVxbnBtZGxCd1pockc1VS9HNTZrMENsdko2cGVzdmNxSjhnVlBMU2R4KzROOE9JTENHdzViVDNMYWdTdUZkQjlSR0UxV3E1eEZtTXhuWTZqZDdXUjVNYTN6S29GdGh4R29JRHVjSGFpZmdVdVFXVlZmVzFyTThDNnhCOEFLRlIxbklvdGs4UGo4VWJGd2RsVGFzU3QwVTdCT082b3Ara0N6NnlIcEx4cnZpMDQwbGxXWCtHd00wUVZMb3VaS05pczFlaDR3aDZPZUZPOWVQa1AxeXpWOFp0T1ViVk1RU3MxMWRmcVFQVmk4VjhKcUE3MEN5bjQ2cm5VdUF3UG85UlgyTE1NU1dRUEl2ZkZEYWNWanI1OEo0dU0xbG02b2VnZWV2ZjNNSHJQT003ZURWYmZKbG5nVXY2THlJQ2ZBVEI0QSsxeWYvNnlQcS96bkRqM1YrKzRJTUNyd0lQdzV0VzFzWk1PYi8rQ2dBQS8vODBFUURLSWdNQQ=="
+		"data": "SDRzSUFBQUFBQUFBL3pTUXoycnpNQkRFWDBYTTZmdEFCenRRV2d0eUNHNlNTMU5DL2wxS0R4dDc2d2hrcTZ5a05oRHk3c1VpM3RzTXcveUcvYmhoRXpxWUcwNHN3Zm9CcHRBNGVCaDhGZFVMTkZiaSs2ektvb0RHdXg4YXpxRVR1Y1F3R04wMWhUZmIyd2hURnRObGQ4VmMwemNNWnNVanR4WHViUm9yUzJoc09GNThDelBUMkpKUUgyRFEvZGFMYmpHZjQ2N0hjYnNtanZ1V1Z4dHIzekpNcGJIam1HU0FHWkp6dWZVWXVJVXBaMC9QWlhYWFdJcDRnVUZOenJHb3pYRi9VR2RXUCtSc1M1RmIxU2F4UTZmNmpGZDg1U1pGNndmMWI4ZVpNcS8rUStNMUNjWHBLV3NLOVlXazR6Qng5K25ja0hNUGZmLzhDd0FBLy84TFZWVUVUUUVB"
 	}
 }

@@ -10,15 +10,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "56e0fd078a4efb47e54d9f8b2019360286d20c09"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.6.2-0.20200909104030-159be5b543fd"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.7"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -33,7 +33,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgbgxgg9HZjdXN0b20gZXhpdCBjb2RlIGFib3J0",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgbgxggdmN1c3RvbSBleGl0IGNvZGUgYWJvcnT0",
 			"epoch": 0
 		}
 	],
@@ -53,6 +53,6 @@
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlFXdmJUaERGdjRwNXAvOGY5ckNTbWtRZTZLRlZiRGVsZG9QYmhwQ1F3Mm8xckRkSTJyQzdNZ0xqNzE0azJkQ1NIcHBEOXpLenM4UHZ6Yng5UEdBZERPaUFPL2JCdWhZa0JiNDdFS0tjNXhCWWV0ZU10MFJLQ0d4Y3EzbHN1bE4xeHlBTTFaVUtYMnhqSXlpUjV6TldsOHlGZWdFaGxhZStXOCtON1Faa0FvRTF4NTJyUUxuQXJmS3FDU0NZM3BqNXA0Zm42bjRqeTFTYWgvdmRTMVY4ZkM3VGJYMnpXdG95K3l4eEZNUGdXeDJIMlJlOWpZV3JHSlNsQWx1T25XOUJiVmZYbytTUHdCVW9lVGUvU3VaSGdZWDN6b09ndXhCZE0rUGV4cGwyRmM5VTZYeWMvYmZsRWZZK1MvK0h3SFhuVlR3YnMxS2gyQ2x2T0lBZUQ5aW9abkRnYTF2c2xHM1hISUl5RElIYTZiTjhOS0FrdmNndk13RnRRRmsrcG9QbitaWEFmbmlYQW50OWltR0tNWUxrVWZ3aXNlTDRRVWZuWCtQbFJKWVRWYjRGT3RsLzArNmRucFo4QlUrei9PSnlFamlsZnlNaXdEMElGcitwamZNdmV0Yi9kSWRyMS83aEQ5NG84Q1R3clN1MXF1c3dVWTVQUHdNQUFQLy9obEZ1b2lzRA=="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVQwdkRRQlRFdjBxWWs4SWVOcTFnKzhDTHRRMktMU1g5SXlvZXRwdG5HdGpOeXY0cGhkTHZMZ25OdTgwdy9ONHczeGNzUXcyNllNOCtOSzRGU1lHdEErRlhUaWNRV0hobmU1VkxDWUdWYXpYM29iMHlpVUhvM0VLRjk4WTJFWlRMNFhwM3dUeFRmeUNNNUMyMzlteWIxQ0Z6Q0N3NUhsMEZtZ2lzbFZjMmdGQ2Y2N3F5cTF5UHk5Tmg4Mnk0TVBLMVdKMitpbDM5K2ZGMjB1MVc0aXE2NHFXT1hmZjV1WWt6VnpGb1BCSW9PU2JmZ3Rwa1RQOXlGN2dDNVEvVHgzeDZGWmg3N3p3SU9vWG9iTWJuSm1iYVZaeXBnL014dXl1NWh6Mk5SL2NRZUVsZXhXR1lRb1haVWZtYXc0RGZwSU5XeHR6MDllYy9BQUQvLzFNLzNiUlJBUUFB"
 	}
 }

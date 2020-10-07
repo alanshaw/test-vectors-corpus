@@ -14,15 +14,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "56e0fd078a4efb47e54d9f8b2019360286d20c09"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.6.2-0.20200909104030-159be5b543fd"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.7"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -37,7 +37,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgegwv0eBlTeXNFcnJSZXNlcnZlZDIoMTEpIGFib3J0",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgegwt4GVN5c0VyclJlc2VydmVkMigxMSkgYWJvcnT0",
 			"epoch": 0
 		}
 	],
@@ -57,6 +57,6 @@
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlFXOGFNUkNGLzByMFRvbmtndzFLdW96VVF3c0xJaW8wQWhwRlJEa1lNMXBXOHRxUjdhVlVpUDllN1M1SXJkSkRjOGhlWm5ZOCt0NmJtZWNqWnJFQUhmSElJWmJlZ2FUQXlvT1E1Q0NEd0RqNHF2MVRVa0pnN3AzaHR1bFIyNXBCYUtvVEhiK1ZWWmxBU2w2K3RqcG1IdXBYRUhyeTNQY1F1Q3JyQnFrZ01PTzA4MXRRSnZDZ2c2NGlDTVhQdmVTdmRzVlA4N0Z4OTh2MTA5d2F0N2JyMGRUUFZ2bnJkREl1Ti8xN2laTm96QzlNYXZ6bmh6SU4vWlpCU2drc09OWEJnVnh0YlN2N0kvSVdwRzU3bjlUZ0pKQ0g0QU1JeTE4eEQySEJrY09ldDcxcnBXNnU5TWFIZEhXOTRKYjNXYWtiQ0l6cW9OTmxQeE1kaHpzZENvNmc1eVBtdW1vVzhkME5kN3AwTTQ1UkZ3d0I2ODNGUVNwQXFwZGxkMzBCVTRENlhkcXNmaUFGOXMxN0U4MDV4aTZtQkpJbjhZZkVoTk1YazN4NGk1Y2RXWGJVZDBHN0swemQzcHR1eURmd1hqKzd2ZXNFenVuL2lBandBWVFTZjZtMS92TURtdytkWWVUZFAyN3dUb0VYZ1dXOU1kcmEyRkZPTDc4REFBRC8vOWRtbkZ3eUF3QUE="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVFXdkNRQlNFLzRyTVNXRVB1NkZTWGVqSnFpQ05TTFFwcGZTd2JsNWpjSk10YnpkV0VmOTdTZEIzbTJHWStYaGZWNlNoaEw0aUp3NlZiNkNsd001RDQwZE9KeEJZc0s5N3BhU0V3Tm8zbHZwUWJseEwwT2pjcFFsdlZWMUZhQ1VmMTdzTG9wbjVoVVlpNzdrTlUxMjFYYVdDUUVyeDRBdm9pY0RHc0trRE5NcS8rTFRNMTJNcjg0dDFLMmVUL0ZMVStUR3R5bk82UFphZkg2dVRiWFlTTjlIQlp6WjIvUE56RldlK0lHaWxCREtLTFRmUVRldGNQL3NlcUlCVzQrUlpUVzhDYzJiUDBOaGV3cHc1bzBCOG9pSVpLalVhbUwzbk9CaG0xUGU5S0RXQ3dHdkxKajcrc3pSaGRqQmNVbmdzYk51OU5jN2Q5ZTM3UHdBQS8vOU9BeVFrV0FFQQ=="
 	}
 }
