@@ -14,15 +14,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "56e0fd078a4efb47e54d9f8b2019360286d20c09"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.6.2-0.20200909104030-159be5b543fd"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.7"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -37,7 +37,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgjgwX0eB5TeXNFcnJJbnZhbGlkUmVjZWl2ZXIoNSkgYWJvcnQ=",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgjgwV4HlN5c0VyckludmFsaWRSZWNlaXZlcig1KSBhYm9ydPQ=",
 			"epoch": 0
 		}
 	],
@@ -57,6 +57,6 @@
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlFXOGFNUkNGLzByMFRvbmtneGUweVdJcGg1WUFBaFdhUWtJb1VRN0dqQlkzWHJ1eXZWc3F4SCt2ZGhla1Z1bWhPWFF2TXpzZWZXL2V6UE1CMDVCREhMQWtIN1N6RUp6aHdVRWc4bDRHaHFGM1JmT1hjQTZHbWJPS21xYWxOQ1ZCb0s2T1pQaWtDeDBoRW43K211cVFxQysvUTZERFQzMzNuZ3BkMXNnRURGT0tPN2VGeUJqdXBaZEZnRUQrWThYcFkvcEFxOWxRMmNsa1k5ZTd6Y2k4UGhiTGIrc24wMW12eG02MmVNMi9QazBxWmIvYzRzaHFFM01WYXgrRHZZNTl0eVdJbEdGT3NmUVd3cGJHTk9xUGdiWVFTWHB6ay9TT0RBUHZuWWZBNG1jWWVEKzJsVFI2T3lkRnVpSi9tVjVkeUkzejhlSnlUZzN6TnIwQ3cxM3BaVHl2YWlSRGZ5ZDlUZ0hpK1lDWkxPcWRmTGI5bmRSMlNpSEluTUJnbkRwUEVYT0lwTnZOcnJzTUtvZm9aazFhWDZHWE1sVDFPMmVvMUNtR05zWUl3WS9zTjRrUnhROHFPdjhXejFzeWI2bjhQZEQySUdOYk9kV2FmQVB2ZExQMHVoVTRwZjhpd2tCN0NHajhvZGJNUDlpVCtxOGU3cHo5eXczZUtmRENzQ2czU2hvVFdzcng1VmNBQUFELy93RmJsbU05QXdBQQ=="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVFVLzZRQlRFdndxWkV5UjdhUC81TjhBbVhFUkFveEJzdFNqR3c5SSt5OFp0MTd6ZFJRbmh1NXMyOEc0em1jems5OTVQV0xvSzhvU2MyR25iUUVZQ3p4WVNuOUY0QklFNTI3cFRjUlJCWUdXYmdycFFya3dnU0xUdVFybEhYV3NQR1VmWDY5dzUwVlI5UStKZmRNbXRtV29kMnNvWUFrdnllMXRDamdUV2lsWHRJRkg5NVAvdnpDb3BvdnhZZkpsUTFuT25ObW0yM2F5TWV0MmFRbGZ4UTNhemY2dkh4M0w5Tk1GWnRCQnA0VnVPMmEvMlUxc1NaQ0tRa2cvY1FEYkJtRzc5eFZFSkdTZkRZVHcrQzh5WUxVTWlPN29aODMxelVFYVhLUldrRDhUOVpOQlRPOHUrMTArcDY1d2tBd2pjQmxiKytxcUZjdE85NG9yY2RTVUx1MElaYzlIbmo3OEFBQUQvLzhnSDAwUmpBUUFB"
 	}
 }

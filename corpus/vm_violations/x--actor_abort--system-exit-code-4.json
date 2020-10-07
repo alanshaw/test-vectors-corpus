@@ -14,15 +14,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "56e0fd078a4efb47e54d9f8b2019360286d20c09"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.6.2-0.20200909104030-159be5b543fd"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.7"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -37,7 +37,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgdgwT0eBhTeXNFcnJSZXNlcnZlZDEoNCkgYWJvcnQ=",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgdgwR4GFN5c0VyclJlc2VydmVkMSg0KSBhYm9ydPQ=",
 			"epoch": 0
 		}
 	],
@@ -57,6 +57,6 @@
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUnoyL2FNQlRILzVYcWUyb2xIeHlnYlhoU0Qxc0lhTlhJT21CZFI5V0RhNTVDdE1TZWJDZGpRdnp2VXhLUU5uV0g5ZEJjN0R3L2ZUN3Z4K01lYzUrRDlyaG41d3RyUUZKZ1pVRUljaHhEWU9wczFmMUZVa0lnczBaemwzU3Z5cHBCYUtNejVUOFdWUkZBa1R4OVhYVEtuS2dmSUF6a01lL09jVlhVTFRLQ3dKekQxbTVBc2NDZGNxcnlJT1EvVjVMZmIxZjhrRTIxdVYydUg3SlNtM1c1bnFRMlM3N24zNzdlTnRwOHZzRkJ0TVV2ZEdqclQzZEZTT3lHUVNPQkJZZmFHWkNweTdLemZ2RzhBVVdYMFhVMFBnaWt6bGtId3ZLWFQ1MWJzR2ZYOENZNkgxMmNxV2Zyd3RuNWdqdmF6ZWdDQXBQYXFYQWF6a3o1Wkt0Y3poNzB1RWVtcW5ZS24weXlWWVdacy9jcVp3aVVWcC84SVFkRmcrdjRhaWlnYzlBdzdxN3QzT094UU5PK1M0RkdIMC9mbnlHQTVFSDhvWmh4ZUtlRGRTL3hzaWZMbmlwZkErMVg4TUUwVnZkTnZvQVBodkhsVlM4NFh2OUhJc0E3RUFyOFpldnFUM2VzMzdTSGlUWC8yTUVyQlU4Q3kvcFpxN0wwUGVYdzlEc0FBUC8vWDlOVkR5OEQ="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVFXdjZRQlRFdjRyTVNXRVB1eEw1NjRLWHYxV2hyV0tUTmxCS0QydnlHa00zMmZKMnQyMFF2M3RKMEhlYllmaTlZZDdPMlBrSytveWMyTmV1aFpZQ3p3NGFIM0l4aDhDR1hUTW9KU1VFOXE0dGFBamx4a2FDUnU5dWpYK3NtenBBSzNtN3dkMFFyY3dYTktieW1qc3dOWFhza1FvQ093b25WMExQQlE2R1RlT2hVZjJreVhhem54VXk3d3A3YjR0cDNwVk4vcm5MS3ZtUS9UKzlOb3V1UER3dGNSRjkrYlFJZmYvMWJ4MVdyaVRvUkNDbEVMbUZicU8xdzljWFR5VzBtcWwvYW5FUldETTdoa2JXK1RWelNwNzRtMG8xVGlZamMzUWNSdU9VQnRveW1VRGdMcklKdDNHMnhxOU9oaXZ5TjM0V2o0V3g5cW92NzM4QkFBRC8vOEN6YkhaVkFRQUE="
 	}
 }

@@ -14,15 +14,15 @@
 		"gen": [
 			{
 				"source": "genscript",
-				"version": "56e0fd078a4efb47e54d9f8b2019360286d20c09"
+				"version": "1a7b4edecb7fa738b6fc6b51c477aa4c10724dd6"
 			},
 			{
 				"source": "github.com/filecoin-project/lotus",
-				"version": "v0.6.2-0.20200909104030-159be5b543fd"
+				"version": "v0.8.2-0.20201007125700-81fb552e1dcd"
 			},
 			{
 				"source": "github.com/filecoin-project/specs-actors",
-				"version": "v0.9.7"
+				"version": "v0.9.11"
 			}
 		]
 	},
@@ -37,7 +37,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgbgwf0d1N5c0Vyck91dE9mR2FzKDcpIGFib3J0",
+			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgbgwd3U3lzRXJyT3V0T2ZHYXMoNykgYWJvcnT0",
 			"epoch": 0
 		}
 	],
@@ -57,6 +57,6 @@
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUk1XL2JNQkNGLzByd3BnVGdRTmwxSkIzUW9iQmxJVzF0QjA3ckpjaEFVeGRacUNRR0pPVTZOZlRmQzBrMjBDSWQ2aUZjN25nOGZPL3U4ZkdJaGN0QlIyell1c0xVSUNud3pZRGdaUnhCWUc1TjFkOENLU0d3TkxYbXZtbWp5b1pCNktxcGNsK0xxdkNnUUo1UFg1MHpUOVVMQ0NONTZydTNYQlZOaHd3Z3NHQy9NeGtvRXJoWFZsVU9oUHpuczh5QzVVVEx6YXYrRVFkWkVsZnIwZnpYbDVsK3VVdm54WGI4V2FJVjNlQnI3YnZaazBQaHB5WmpVQ2l3WnQvWUdsUTNaZGtyZm5lY2dZSVBjUmpFclVCaXJiRWdQTHk2eE5wVjQxZlBxWExYNGMyVjJocnJyNjdYM01NK2hqY1FtRFZXK2JNdnFYTFRuYkk1TzlEakVVdFZkUWFzNnVsT0ZmV0NuVk01UTZBMCtpenZjMUF3bWtTM1l3R2RnOFpSbjNhV1I2SEF2bnVYQW50OWltNkkzb05rSy82UVNObC8wdDdZdDNnNWtPVkFsWmRBQi9mdjZyM1J3NUp2NEtOeE5Ma2RCRTdwLzRnSThBR0VBbitwOWZNbkI5YnZ1c1BNMVAvNGd3c0ZuZ1FlbXExV1pla0dTdnYwT3dBQS8vL0xnWWsyS2dNQQ=="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVQydkNRQlRFdjRyTVNXRVBHeTFFRjNxeWFwSDZoeGl0dHZTd0pzOFltbVRMMjkyMlZ2enVKY0c4Mnd6RDd3M3pmc1hDWmxCWDdJaHRiaW9vS1JBYktKemthQWlCS1p1eVVZR1VFRmlhS3FFbXROT0ZKeWpVN2t6Ymw3ek1IVlFnMjJ2Y0tkRllmMEdoTCsrNU5WT1oreG9aUUdCQjdteFNxS0hBV3JNdUxSU3luM1N3SFJSLzBYNStpUWM3R2ZmZm5nLzdoVmxlUHJQRDYvdzdxV0tKbTZpTFI0bXJ1MDkrY3pjMktVR0ZBaEU1enhWVTVZdWkrYmkxbEVJRkQ2TXdHTjBFSnN5R29iQzUyQW56eXJ2VmFhWnROK3gxOU5HdzYzUWphbUNQWVE4Q1Q1NjFhM2VaYVRzK2E4N0l0dmlOUHlhNktPNzY5dkVmQUFELy95aFFud3BRQVFBQQ=="
 	}
 }

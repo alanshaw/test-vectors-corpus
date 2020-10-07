@@ -1,8 +1,13 @@
 {
 	"class": "message",
+	"hints": [
+		"incorrect",
+		"negate"
+	],
 	"_meta": {
-		"id": "fail-invalid-method-num-for-actor",
+		"id": "fail-missing-params",
 		"version": "v1",
+		"comment": "nested message exit code should be ErrSerialization see https://github.com/filecoin-project/test-vectors/issues/93#issuecomment-689593946",
 		"gen": [
 			{
 				"source": "genscript",
@@ -33,7 +38,7 @@
 			"epoch": 0
 		},
 		{
-			"bytes": "igBCAGVCAGQBQBo7msoAQgDIQgABAkqEQgBkQgABGGNA",
+			"bytes": "igBCAGVCAGQBQBo7msoAQgDIQgABAkmEQgBlQgABBUA=",
 			"epoch": 0
 		}
 	],
@@ -51,13 +56,13 @@
 			},
 			{
 				"exit_code": 0,
-				"return": "hAD1A0A=",
-				"gas_used": 1354947
+				"return": "hAD1AUA=",
+				"gas_used": 1351947
 			}
 		]
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUzMyL1RNQkRILzVYb25rQ3loTk4wS3JiVUJ5OUxROUYrTmFOaEN0cURsM2hKd0luQmRnYnJsUDhkSlZIVkRCaWlVUEoycDlNM2R4OS9QanpDbWNtQlBrSXN0Q2xWRFJRamVLZUF3aDEyQWNGQ3Eyb29NQVlFNTZwT1JUOFRjOWtJb09EaTdRY0lRbTVPeTZxMFFIZnR2cnNRd3VlZmdjSmtPM2VwUlZVMlhYYjNtek5oQzVVQm5TQzQ1SnBYQmlqa052K3kvc3FPNHhXN1NDcHBUamZCL2UxMWJMSlFidmo3N0UwK1hmZ3NYQjB6TnA5RGk3cERvdFIydHdUZlN1dXJiRmcwRXJiUmRaZjNhY21TZU8wMzhpNS9mWis4bXIwOThxL0RTZmhRWEowL3BQWml1V0h6WWJlMUVkMHVtT0FaOFZvRWdkWktBd1ZBY05Kb2JyZWNRbTc4Z3V0Y0dLQjFJeVdDcStZMjVWSWFvTDhuK3dQYlE1RDlpU3NlY1hYSFhQZmpOaHgySUNwZDNkNjBhQjg0WS9IY0haNkQrMVlFUzVZRVM4YWk0dVBxRDUwcTJJbkw4Rk52WEc5S3lIVDJmN3pCVDlFOFk4Ni9DMFBJamt6L2FMOW00VDNyQ1prZGVaT3hKclZ5cWo3Y0ljUlJ0Y05UcTdUekloSjkxTng3K1JjZTNYd1BBQUQvLzJuZU43bkFCQUFB"
+		"data": "SDRzSUFBQUFBQUFBLzd5UzMyL2FNQkRILzVYb25qYkowdXhBeDdERWc1dUdqS2t0aFM1WnhkUUhOem1TYUE3dWJLZGJxZmpmSjRNUTdFZW5zYUhsN1U2bmIrNCsvbng4Z2d0YkFuK0NESTJ0OVFJNEpmQmVBNGM1WlVCZ2FIU3pLU2dGQXBkNmtlTjZKcE9xUmVEQTZQWURBb20wNTNWVE8rQzc5cm83Ukl6a1BYQUl0M05YQnB1NjlkbitOeGZvS2wwQUR3bGNTU01iQ3h4S1YzNU92NGpUYkNMR3MwYlo4Mlg4Y0hlVDJTSlJTL21oZUZ0Mmg1RklKcWRDREFhd0l2NlFhZTc4TGZIWDJrVzYyQ3c2UmRlYWhjLzdOQkt6TEkxYU5TL2ZQTXhlOWQ2ZFJEZEptRHhXMTVlUHVSdVBsbUt3MlMyMTZIZWhmZHJyZDFZRVltTzBBUTVBNEt3MTBtMDVKZEpHbFRRbFd1Q0xWaWtDMSsxZExwV3l3SDlQOWdlMnh5RDdFMWU2eDVYdGN6Mk0yK2F3STFIeDllcDJSUTZCc3k4ZTIrRTV1bTlWUEJLemRDVEVKQk4vNGxNbHpwaEl2M2VHZGJxdis5M2UvM0RtT1d2K1haYVRIWlQxZS8wYUJYdFdrWDR2N0lUN2hzeGxyYkFJbkE0S3pIV0J3YjJQUjRmR0JpK211QTRjc0pjOGlNZkR2N0RwOWxzQUFBRC8vK1RiRnRMR0JBQUE="
 	}
 }

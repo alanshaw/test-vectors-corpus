@@ -3,14 +3,10 @@
 	"selector": {
 		"chaos_actor": "true"
 	},
-	"hints": [
-		"incorrect",
-		"negate"
-	],
 	"_meta": {
-		"id": "system-exit-code-15",
+		"id": "caller-always-id-address",
 		"version": "v1",
-		"description": "actors should not abort with SysErrReserved6(15)",
+		"description": "verify Runtime.Caller() returns an ID address even when message is sent from a robust address",
 		"gen": [
 			{
 				"source": "genscript",
@@ -37,7 +33,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgegw94GVN5c0VyclJlc2VydmVkNigxNSkgYWJvcnT0",
+			"bytes": "igBCAGJVAWnoM0lMkR1q/i/hPSFeTFz3B2JVAEAaO5rKAEIAyEIAAQlA",
 			"epoch": 0
 		}
 	],
@@ -49,14 +45,14 @@
 		},
 		"receipts": [
 			{
-				"exit_code": 15,
-				"return": "",
-				"gas_used": 152719
+				"exit_code": 0,
+				"return": "hkIAZEIAYkAAQIJggA==",
+				"gas_used": 297961
 			}
 		]
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBL3pSUVFXdnlRQlQ4S3pJbmhUM3N5cGV2dXRDVFZVRnFrR2hUU3VsaDNiekc0Q1piM202c0l2NzNrcUR2TnZPR21XRStyMWlIRXZxS25EaFV2b0dXQWpzUGpXODVuVUJnd2I3dWtaSVNBcWx2TFBXaTNMaVdvTkd4U3hOZXE3cUswRW8rcm1jWFJEUHpBNDJ4dk9zMlRIWFZkcFlLQW11S0IxOUFUd1EyaGswZG9GSCtUdjh0OHpTeE1yOVl0M0oybkYrS09qK21WWGxPdDhmeTQzMTFzczFPNGlhNjhwbU5YZi81dVlvelh4QzBTZ1F5aWkwMzBFM3JYQi83RnFqb1h1TW5OYjBKekprOVEyTjdDWFBtakFMeGlZci9RNVdNQm1idk9RNkdHZlYrenlvWlFlQ2xaUk1mK3l4Tm1CME1seFFlQ2R0MmI0MXpkM3o3K2dzQUFQLy9vakRXdFZnQg=="
+		"data": "SDRzSUFBQUFBQUFBL3pTUVcydnlRQkNHLzh0N3ZSZUppb2NGTDRLZmloKzFXTnNLYmVuRk5wa213VDJrTzd0V2tmejNFZzl6OXc3RDh6N014eGxyTGlIUDJKSG4ybG5JUk9ERlFlSTdtWXdoc1BET2RDbTFWU3hLM2hzbTkzc1krV1pBUTg2UGJIVG8vN2dUSHhvNzZvZDRnc0Nqc3psZFFEdWxJMEVpZ2NCUzhVTnQ2Z0NaSnZlNWJCZEVNOVZBb3BmYzdqYWVUQjI3MmhRQ2F3cVZLeUFuQWh2bGxXRklvQldkK0RZUG5mdjhXSWVaSzY2ZFd3clJXMGhVKzFYMlBsOWxiL3NzZTFyOUw4dHNPcjN5WDVrS3lONTRNQm1tcmNEY2UrYzdxTUMvNkZXNHYyR3BlRllwWHhKRDJxaTF3SFA4eXBYV3Q5eCsvZ1VBQVAvLzZyVy9KVDhC"
 	}
 }
