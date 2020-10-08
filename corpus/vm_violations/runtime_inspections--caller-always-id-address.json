@@ -3,14 +3,10 @@
 	"selector": {
 		"chaos_actor": "true"
 	},
-	"hints": [
-		"incorrect",
-		"negate"
-	],
 	"_meta": {
-		"id": "system-exit-code-9",
+		"id": "caller-always-id-address",
 		"version": "v1",
-		"description": "actors should not abort with SysErrorIllegalActor(9)",
+		"description": "verify Runtime.Caller() returns an ID address even when message is sent from a robust address",
 		"gen": [
 			{
 				"source": "genscript",
@@ -37,7 +33,7 @@
 	},
 	"apply_messages": [
 		{
-			"bytes": "igBCAGJCAGQAQBo7msoAQgDIQgABCFgigwl4HVN5c0Vycm9ySWxsZWdhbEFjdG9yKDkpIGFib3J09A==",
+			"bytes": "igBCAGJVAWnoM0lMkR1q/i/hPSFeTFz3B2JVAEAaO5rKAEIAyEIAAQlA",
 			"epoch": 0
 		}
 	],
@@ -49,14 +45,14 @@
 		},
 		"receipts": [
 			{
-				"exit_code": 9,
-				"return": "",
-				"gas_used": 156719
+				"exit_code": 0,
+				"return": "hkIAZEIAYkAAQIJggA==",
+				"gas_used": 297961
 			}
 		]
 	},
 	"diagnostics": {
 		"format": "Lotus-ExecutionTrace-V1",
-		"data": "SDRzSUFBQUFBQUFBLzdTUlQyL2FRQkRGdjByMFRvbTBoelVPMUY2SlE4UWZsN2JRQ0ZvaU5jcGhXVStOMjdVMzJsMVRFT0s3VjE2RDFDbzlOSWY0TXVQWjBlL05tM2s4WXU0S2lDUFdaRjFwYWdqTzhNVkE0RHRQRXpCTXJhbkNYOFE1R0JhbVZoU2ExbEkzQklHMm1rbjNxYXhLRHhIeHl4ZXFVNktSZklaQWo1Lzc3aTFWWmRNaUl6RE15VzlORHBFdzNFc3JLd2VCNHBlK2ZiOWU5QlZmSDFTVkhsWVBlL2Z0SWQ5dUp0TWZlWlllUG81L1BzK3lhYm1KUC9EMGJqakVpYlVtbHNxM1BpYjcwbzlNVGhBcHc1SjhZMnVJdXRFNnFIOTFsRU5FL2NHN0tEMHhUS3cxRmdLcmd3dnBUR3NxcEw1VDN0anI5T1pLYm96MVY5ZExDc2hoZWdPR2NXT2x2MndxazI2MGxiWWdCL0Y0eEVKVzdVbysxNk90TE9zNU9TY0xBb00yNmpLRUx5Q2l1SmNNWWdaVlFNUkpTTnNqcExjTXUvYWRNK3pVT2JvdWVnL0JUK3dQaVl4OG1QTWxubmRrM2xINWE2RGRQV2IxenFqTzVBdDRMMDc2ZzA3Z25QNlBDQVB0SVZEaUw3VXcvMlJQNmswOWpFMzlqeHU4VXVDSllkVnNsTlRhZFpUVDArOEFBQUQvL3dWVnlhdzhBd0FB"
+		"data": "SDRzSUFBQUFBQUFBLzd5VHkyN2JPaENHMytWZmMwRlp2c2dFc2hBY3hkREJjWnFtYllBMnlJS2xwcEpnaVhSSlNuVmcrTjBMaVE2UTFnVjZTVkZ0T0JLSTc1c1p6ZHdmc0hFbHhBRjNaRjF0TkFSbmVHc2c4SWt2RXpCY1dkTU9iNUd1dXFKMDI5YVIrZEl2N0c1S2M2ZjJybTE4L05rOHVuNm5GN0h2SHNGd2JiU2lFWFFubTQ0Z3dNR3dsdTcvdXEwOVJNU2ZudkhyRmRGSzdpQXc0YWQ3TjViYXVodTBFUmcyNUN0VFFDd1picVNWcllNQWpteEkvRmI1SWZkc1gvdVZLWUx6bG54bk5RU3FiWjUreVBMMC9UWk5YK2YvbFdWNmNSSDQ3eHdWRUpOa3VweEhSNGJNV21NSEtNTmxaNlYvYXNOYXVsVWxiVWtPNHY2QWE5a090YnpTcTByV2VrUE95WkxBMEJnRm9idW1ZZkFsUkpUTWtubk1vRXFJT0JuRG9jUFJkTUhRRHhjNFE2OU9wd3VuOXhEOHlKNDUxdVJUNVkwOTUvT0E1Z0hMZndjYU9wbnIzcWhRNVJsOEVpZXplUkNjd2wrUk1OQWVBalcrc1kzNVozdFNmN1dHZk5jVWEvTG56TVZzTXAwRTdpbjhVM2FtaTVlbUhEb1MvNE4rZlA5UEw0Myt3VkMrUURCT2UxaXFzTTduRXgrUHEveE1FTVUvTXp3d3ZPaytLdGswTHFDT0QxOERBQUQvLzQ1UkdXZU1CQUFB"
 	}
 }
